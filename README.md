@@ -7,7 +7,7 @@ A full-stack web application to predict customer churn for a telecom company usi
 - 🧠 **AI-Powered Prediction**: Predict customer churn using a neural network.
 - 🌐 **Frontend with Builder.io**: Drag-and-drop CMS for smooth, customizable UI.
 - ⚡ **Backend with FastAPI**: High-performance API to serve the model and handle requests.
-- 🔐 **Secure & Scalable**: Clean code structure with potential for production deployment.
+- 📊 **Based on Real Data**: Trained on an actual telecom churn dataset from Kaggle.
 
 ## 🛠 Tech Stack
 
@@ -15,12 +15,13 @@ A full-stack web application to predict customer churn for a telecom company usi
 |------------|-------------------|
 | Frontend   | [Builder.io](https://www.builder.io/) |
 | Backend    | [FastAPI](https://fastapi.tiangolo.com/) |
-| AI Model   | Neural Networks (TensorFlow/Keras/PyTorch) |
-| Deployment | [Optional: add if deployed - Vercel, Render, etc.] |
+| ML Model   | Neural Network (TensorFlow/Keras or PyTorch) |
+| Dataset    | [Kaggle Telecom Churn Dataset](https://www.kaggle.com/datasets/blastchar/telecom-churn) |
 
 ## 📸 Screenshots
 
-> *(Add screenshots/gifs of the UI if possible here)*
+![Churn Prediction UI](./assets/screenshot.png)
+
 
 ## 🧪 How It Works
 
