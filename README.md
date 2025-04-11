@@ -37,5 +37,5 @@ A full-stack web application to predict customer churn for a telecom company usi
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/telecom-churn-predictor.git
-cd telecom-churn-predictor
+git clone https://github.com/Graffian/Customer-Churn.git
+cd Customer-Churn
