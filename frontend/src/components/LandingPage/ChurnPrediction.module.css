@@ -1,0 +1,370 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.dashboard {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  display: grid;
+}
+
+@media (width <= 640px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form Styles */
+.formCard {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.formCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px #00000026;
+}
+
+.formGrid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+  display: grid;
+}
+
+@media (width <= 640px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formField {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.fieldLabel {
+  color: #4a5568;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.selectInput {
+  cursor: pointer;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  transition: all 0.2s;
+}
+
+.selectInput:hover {
+  border-color: #94a3b8;
+}
+
+.selectInput:focus {
+  border-color: #4299e1;
+  outline: none;
+  box-shadow: 0 0 0 3px #4299e133;
+}
+
+.numberInput {
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+}
+
+.numberInput:focus {
+  border-color: #4299e1;
+  outline: none;
+}
+
+.predictButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4299e1;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 16px;
+  font-weight: 700;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px #4299e14d;
+}
+
+.predictButton:hover {
+  background-color: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px #4299e166;
+}
+
+.predictButton:active {
+  transform: translateY(0);
+}
+
+/* Results Section */
+.resultsSection {
+  background-color: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  transition: transform 0.2s;
+  display: flex;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.resultsSection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px #00000026;
+}
+
+.predictionBox {
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.resultTitle {
+  margin-bottom: 10px;
+}
+
+.predictionText {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.graphContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.graphTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.graphArea {
+  background-color: #f1f5f9;
+  border: 2px dashed #cbd5e0;
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  transition: all 0.2s;
+}
+
+.graphArea:hover {
+  background-color: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+/* Metrics Grid */
+.metricsGrid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+}
+
+.metricsCard {
+  text-align: center;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 4px #0000000d;
+}
+
+.metricsCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.metricsTitle {
+  color: #4a5568;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.metricsValue {
+  color: #2d3748;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Insights Section */
+.insightsContainer {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.insightsTitle {
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.insightsGrid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  display: grid;
+}
+
+@media (width <= 640px) {
+  .insightsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trendsCard {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.trendsCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px #00000026;
+}
+
+.cardTitle {
+  color: #4a5568;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.trendsList {
+  padding: 0;
+  list-style: none;
+}
+
+.trendItem {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.trendUp {
+  color: #48bb78;
+  font-size: 20px;
+}
+
+.trendDown {
+  color: #f56565;
+  font-size: 20px;
+}
+
+.riskCard {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.riskCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px #00000026;
+}
+
+.riskFactors {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+.riskFactor {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.progressBar {
+  background-color: #edf2f7;
+  border-radius: 4px;
+  width: 60%;
+  height: 8px;
+}
+
+.progressFill {
+  border-radius: 4px;
+  height: 100%;
+}
+
+.predictionResult {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.predictionValue {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #2c3e50;
+}
+
+.predictionInterpretation {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.highRisk {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.lowRisk {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.errorMessage {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  border-radius: 4px;
+  color: #dc2626;
+  text-align: center;
+}
+
+.chartContainer {
+  margin-top: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
