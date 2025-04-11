@@ -20,7 +20,8 @@ A full-stack web application to predict customer churn for a telecom company usi
 
 ## 📸 Screenshots
 
-![Churn Prediction UI](./frontend/src/assets/screenshot.png)
+![Churn Prediction UI](frontend/src/assets/Screenshot.png)
+
 
 
 ## 🧪 How It Works
